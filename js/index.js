@@ -65,3 +65,18 @@
 //     console.log(`false)`)
 // }
 
+// 1сделать вари
+// const minSalary = 18000;
+// const maxSalery = 25000;
+// const employees = 4;
+// let totalSalery = 0;
+// // перебрать сотрудников
+// for (let i = 1; i <= employees; i += 1){
+//     const salary = Math.round(
+//         Math.random() * (maxSalery - minSalary) + minSalary)
+// console.log(`ЗП сотрудника номер ${i} - ${salary}`);
+//     // прибавить к тоталу
+//     totalSalery += salary; 
+// }
+// //лог
+// console.log("totalSalery:",totalSalery)
