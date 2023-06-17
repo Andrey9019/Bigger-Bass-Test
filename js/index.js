@@ -76,7 +76,125 @@
 //         Math.random() * (maxSalery - minSalary) + minSalary)
 // console.log(`ЗП сотрудника номер ${i} - ${salary}`);
 //     // прибавить к тоталу
-//     totalSalery += salary; 
+//     totalSalery += salary;
 // }
 // //лог
 // console.log("totalSalery:",totalSalery)
+
+
+
+// let password = "";
+
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+
+
+// const target = 3;
+// let sum = 0;
+
+// for (let i = 0; i <= target; i += 1) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+
+// інструкції і варіації
+
+// if(){
+
+// }else{
+
+//}
+
+// інстукції switvh
+
+// const value = 4;
+// switch (value) {
+//     case 1:
+//     console.log(`One`);
+//         break;
+//      case 3:
+//     console.log(`tree`);
+//         break;
+//      case 7:
+//     console.log(`seven`);
+//         break;
+//      case 4:
+//     console.log(`four`);
+//         break;
+//     default:
+//         console.log(`default`);
+
+// }
+
+
+// for (let i = 0; i <= 20; i += 1) {
+//     if (i % 2 === 0) {
+// console.log(`парне`, i);
+//         continue;
+// }
+//     console.log(`не парне`, i);
+// }
+
+
+
+// task 1
+
+// let message = prompt(`color ?`);
+// let action;
+// if (message) {
+//     message = message.toLowerCase()
+// }
+
+// if (message === `red`) {
+//     action = `stop`;
+// } else if (message === `yellow`) {
+//     action = `redy`;
+// } else if (message === `green`) {
+//     action = `go`;
+// } else {
+//     action = `be careful`;
+//  }
+// console.log(action)
+// console.log(message);
+
+
+//task 2
+
+let message = prompt(`color ?`);
+let action;
+if (message) {
+    message = message.toLowerCase()
+}
+
+switch (message) {
+    case `red`:
+        action = `stop`;
+        break;
+    
+    case `yellow`:
+        action = `redy`;
+        break;
+    
+    case `green`:
+        action = `go`;
+        break
+    
+    default:
+        action = `be careful`;
+}
+console.log(action)
+
+
+
+
+
+
+
+
+
+
