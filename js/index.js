@@ -165,35 +165,72 @@
 
 //task 2
 
-let message = prompt(`color ?`);
-let action;
-if (message) {
-    message = message.toLowerCase()
-}
+// let message = prompt(`color ?`);
+// let action;
+// if (message) {
+//     message = message.toLowerCase()
+// }
 
-switch (message) {
-    case `red`:
-        action = `stop`;
-        break;
+// switch (message) {
+//     case `red`:
+//         action = `stop`;
+//         break;
     
-    case `yellow`:
-        action = `redy`;
-        break;
+//     case `yellow`:
+//         action = `redy`;
+//         break;
     
-    case `green`:
-        action = `go`;
-        break
+//     case `green`:
+//         action = `go`;
+//         break
     
-    default:
-        action = `be careful`;
-}
-console.log(action)
+//     default:
+//         action = `be careful`;
+// }
+// console.log(action)
+
+//Task 3
+
+// function check( text, answear) {
+    
+//     // console.log(answear)
+//     let message = prompt(text);
+// if (message) {
+//     message = message.toLowerCase();
+//     }
+
+// return message === answear
+// }
+
+// const result = check(`хоч не літак, а крилатий` , 'вітряк')
+// console.log(result)
+
+// check(`хоч не літак, а крилатий` , 'вітряк')
+// check(`через воду проводить` , `міст`)
 
 
+// task 5
 
+// getDays(42)
 
+// function getDays (deps) {
+//     const daySpeed = 7;
+//     const nightSpeed = 2;
+//     let total = 0;
+//     let days = 0;
+//     while (total < deps) {
+//         total += daySpeed;
+//         days += 1;
+//         if (total < deps) {
+//             total -= nightSpeed;
+//         }
+//         console.log(days);
+//     }
+// }
 
+// task 6
 
+ 
 
 
 
