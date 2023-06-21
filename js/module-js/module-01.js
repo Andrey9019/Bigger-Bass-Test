@@ -176,3 +176,83 @@
 
 //     return message;
 // }
+
+
+
+// const productName = "Repair  droid";
+
+// // Якщо у змінній зберігається рядок
+// console.log(productName.length); // 12
+
+// // Якщо рядковий літерал
+// console.log("Repair droid".length); // 12
+
+
+//30
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+//   return message;
+// }
+// // console.log(message);
+
+
+//31
+
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+// const courseTopic = "JavaScript essentials";
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+//32
+// function getSubstring(string, length) {
+//   const substring = string.slice(string, length); // Change this line
+
+//   return substring;
+// }
+//   getSubstring('Hello world', 11);
+//   getSubstring('Hello world', 11);
+//   getSubstring('Hello world', 3);
+// getSubstring('Hello world', 0);
+
+//33
+
+
+//     function formatMessage(message, maxLength) {
+//   let result;
+//   result = message.length > maxLength ? message.slice(0, maxLength) + '...' : message
+//   return result;}
+
+//34
+
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase();
+//   return normalizedInput;}
+
+//35
+
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name); // Change this line
+//   return result;
+// }
+
+//36
+
+function checkForSpam(message) {
+  let result;
+
+    const toLowerCaseMessage = message.toLowerCase()
+    
+    if (toLowerCaseMessage.includes(`spam`) || toLowerCaseMessage.includes(`sale`))  {
+        result = true;
+    } else {
+        result = false;
+}
+
+    return result;
+}
+
+
