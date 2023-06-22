@@ -58,14 +58,94 @@
 
 //task 2
 
-function getCommonElements(arr) {
-    const result = [];
+// function getCommonElements(arr) {
+//     const result = [];
     
-    for (let i = 0; i < arr.length; i += 1) {
-        if (arr.includes(arr[i], i + 1)) {
-            result.push(arr[i])
-        }
-    }
-    return result
-};
-console.log(getCommonElements([1, 2, 3, 4, 43, 2, 13, 1, 3,]));
+//     for (let i = 0; i < arr.length; i += 1) {
+//         if (arr.includes(arr[i], i + 1)) {
+//             result.push(arr[i])
+//         }
+//     }
+//     return result
+// };
+// console.log(getCommonElements([1, 2, 3, 4, 43, 2, 13, 1, 3,]));
+
+//task 3
+
+// const users = [`Artem`, `Anna`, `Andrey`, `Larisa`, `Olga`, `Maksim`]
+// const man = [`Artem`, `Andrey`, `Maksim`];
+
+// function getWoman(users, man) {
+//     const woman = [];
+
+//     for (const user of users) {
+//         if (!man.includes(user)) {
+//            woman.push(user)
+//         }
+//     }
+//     return woman
+// }
+// console.log(getWoman(users, man));
+
+//task 4
+
+// const string = `welcome to the future`;
+// const SEPARATOR = ` `;
+// const result = string.split(SEPARATOR).reverse().join(SEPARATOR);
+
+// console.log(result);
+
+
+//task 5
+
+
+// const  numbers = [20,21,14,23,11,25,26,4,28,29];
+
+// for (let i = 1; i < numbers.length; i += 1) {
+//     if (numbers[i] - numbers[i - 1] !== 1) {
+//         numbers[i] = numbers[i - 1]+1
+//     }
+
+//     console.log(numbers[i]);
+// }
+
+// task 6
+
+// function creatStr(arr) {
+//     let message;
+
+//     switch (arr.length) {
+//         case 0:
+//             message = `no one likes this`
+//             break;
+//         case 1:
+//             message = `${arr[0]} likes this`
+//             break;
+//         case 2:
+//             message = `${arr[0]} and ${arr[1]} likes this`
+//             break;
+//          case 3:
+//             message = `${arr[0]}, ${arr[1]} and ${arr[2]} likes this`
+//             break;
+//         default:
+//             message = `${arr[0]} ,${arr[1]} and ${arr.length - 2} other likes this`
+            
+//         }
+// return message
+        
+//     }
+//         console.log(creatStr([]));
+//         console.log(creatStr([`Peter`]));
+//         console.log(creatStr([`Peter`,`Alex`]));
+//         console.log(creatStr([`Peter`,`Alex`,`Jacob`]));
+//         console.log(creatStr([`Peter`, `Alex`, `Jacob`, `Andrey`,`Peter`]));
+
+
+
+ 
+///// Function
+
+
+
+
+
