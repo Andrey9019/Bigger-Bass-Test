@@ -31,3 +31,13 @@
 //   }
 //     return "The order is accepted, our manager will contact you";
 // }
+
+//Task-13
+
+// function slugify(title) {
+
+// return title.toLowerCase().split(` `).join(`-`)
+
+// }
+// slugify("Arrays for begginers")
+

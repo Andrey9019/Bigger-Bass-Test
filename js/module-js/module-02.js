@@ -145,7 +145,93 @@
  
 ///// Function
 
+// function getSum(a, b) {
+
+//     let sum = 0;
+
+//     const arr = Array.from(arguments)
+//     // console.log(arr);
+//     for (const arg of arguments) {
+//         sum += arg;
+
+//     }
+//     console.log(sum);
+// }
+// getSum(3, 5);
+// getSum(2, 5, 7);
+//  getSum(1, 4, 6, 8, 9, 7, 5, 3);
+
+
+// let someValue = 4;
+
+// if (true) {
+//     someValue = 11;
+// }
+// console.log(someValue);
+
+ 
+
+// Task-1
+// const numbers = [10, 13, 15, 17, 19];
+
+// function cheakValue(arr, target) {
+//     let message = `Success`;
+
+//     for (const num of arr) {
+//         if (target > num) {
+//             message = `Fail`;
+//         }
+//     }
+
+//     return message
+// }
+
+// console.log(cheakValue(numbers, 9));
+// console.log(cheakValue(numbers, 11));
+
+// або краще патерн ранього повернення
+
+//  const numbers = [10, 13, 15, 17, 19];
+// function cheakValue(arr, target) {
+//     for (const num of arr) {
+//         if (target > num) {
+//             return `Fail`
+//         }
+//         return `Success`
+//      }
+//  }
+
+//  console.log(cheakValue(numbers, 9));
+// console.log(cheakValue(numbers, 11));
+
+
+// // Task-2
+
+// const data = [1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+// function getCombination(arr, count) {
+//     const result = [];
+
+//     for (let i = 0; i < arr.length; i+=count) {
+//         const comb = arr.slice(i, i + count)
+//         result.push(comb)
+        
+//     }
+//     return result
+// }
+// console.log(getCombination(data, 3));
 
 
 
+// Task-3
 
+// function getReactArea(dimension) {
+//     const arr = dimension.split(` `)
+//     const firstValue = Number(arr[0]);
+//     const secondValue = Number(arr[1]);
+
+//     return firstValue * secondValue
+
+// }
+
+// console.log(getReactArea(`3 5`));
+// console.log(getReactArea(`15 9`));
