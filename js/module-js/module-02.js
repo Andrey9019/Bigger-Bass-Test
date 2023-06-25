@@ -235,3 +235,34 @@
 
 // console.log(getReactArea(`3 5`));
 // console.log(getReactArea(`15 9`));
+
+                //Метод ДОДАВАННЯ
+// const courses = [`HTML`, `CSS`, `JavaScript`,
+//      `React`, `Noad JS`];
+
+//     function addCourses(name) {
+//         if (courses.includes(name)) {
+//         return `Ви вже маете данний курс`
+//         }
+//         courses.push(name);
+// }
+//     addCourses(`Express`)
+// console.log(courses);
+
+                //Метод РЕМУВ
+
+// const courses = [`HTML`, `CSS`, `JavaScript`,
+//      `React`, `Noad JS`];
+
+// function removeCourse(name) {
+//     const idx = courses.indexOf(name);
+
+//     if (!~idx) {
+//         return `Курс із таким ім'ям не знайдено`
+//     } 
+         
+        
+// }
+// console.log(removeCourse(`React`));
+// console.log(courses);
+// console.log(removeCourse(`Vue`));
