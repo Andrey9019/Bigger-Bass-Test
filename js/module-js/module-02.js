@@ -68,7 +68,7 @@
 //     }
 //     return result
 // };
-// console.log(getCommonElements([1, 2, 3, 4, 43, 2, 13, 1, 3,]));
+// console.log(getCommonElements([43,1, 2, 3,13, 4, 43, 2, 13, 1, 3,]));
 
 //task 3
 
@@ -251,18 +251,43 @@
 
                 //Метод РЕМУВ
 
-// const courses = [`HTML`, `CSS`, `JavaScript`,
-//      `React`, `Noad JS`];
+//  const courses = [`HTML`, `CSS`, `JavaScript`,
+//       `React`, `Noad JS`];
 
 // function removeCourse(name) {
 //     const idx = courses.indexOf(name);
 
+//     // ~
+//     // -(x + 1)
+//     // -1 => True ~ => 0 => False
+//     // 0 => False ~ => -1 => True
+
 //     if (!~idx) {
 //         return `Курс із таким ім'ям не знайдено`
-//     } 
-         
-        
+           
+//     }
+//     courses.splice(idx,1)
 // }
-// console.log(removeCourse(`React`));
+//  console.log(removeCourse(`React`));
+//  console.log(removeCourse(`Vue`));
+//  console.log(courses);
+
+
+
+//  const courses = [`HTML`, `CSS`, `JavaScript`,
+//       `React`, `Noad JS`];
+
+
+// function updateCourse(oldName, newName) {
+//     const idx = courses.indexOf(oldName);
+//     if (~idx) {
+//         courses[idx] = newName;
+//         return;
+
+//     }
+//     return `Курс із таким ім'ям не знайдено`
+// }
+
+// updateCourse(`CSS`, `NestJS`)
 // console.log(courses);
-// console.log(removeCourse(`Vue`));
+
