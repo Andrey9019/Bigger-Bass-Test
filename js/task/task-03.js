@@ -93,64 +93,64 @@
 
 // Task-4
 
-const hogvarts = {
-  griffindor: [
-    {
-      name: `Harry`,
-      points: 10,
-    },
-    {
-      name: `Hermiona`,
-      points: 12,
-    },
-    {
-      name: `Ron`,
-      points: 9,
-    },
-  ],
-  slizerin: [
-    {
-      name: `Ddaco`,
-      points: 11,
-    },
-    {
-      name: `Goyl`,
-      points: 9,
-    },
-    {
-      name: `Crabbe`,
-      points: 9,
-    },
-  ],
-  getUserList(faculty) {
-    if (!(faculty in this)) {
-      return `fuculty not found`;
-    }
-    const students = [];
+// const hogvarts = {
+//   griffindor: [
+//     {
+//       name: `Harry`,
+//       points: 10,
+//     },
+//     {
+//       name: `Hermiona`,
+//       points: 12,
+//     },
+//     {
+//       name: `Ron`,
+//       points: 9,
+//     },
+//   ],
+//   slizerin: [
+//     {
+//       name: `Ddaco`,
+//       points: 11,
+//     },
+//     {
+//       name: `Goyl`,
+//       points: 9,
+//     },
+//     {
+//       name: `Crabbe`,
+//       points: 9,
+//     },
+//   ],
+//   getUserList(faculty) {
+//     if (!(faculty in this)) {
+//       return `fuculty not found`;
+//     }
+//     const students = [];
 
-    for (const student of this[faculty]) {
-      students.push(student.name);
-    }
-    return students.join(`, `);
-  },
+//     for (const student of this[faculty]) {
+//       students.push(student.name);
+//     }
+//     return students.join(`, `);
+//   },
 
-  getTotalPoints(faculty) {
-    if (!(faculty in this)) {
-      return `fuculty not found`;
-    }
-    let totalPoints = 0;
-    for (const student of this[faculty]) {
-      if (`points` in student);
-      totalPoints += student.points;
-    }
-    return totalPoints;
-  },
-};
+//   getTotalPoints(faculty) {
+//     if (!(faculty in this)) {
+//       return `fuculty not found`;
+//     }
+//     let totalPoints = 0;
+//     for (const student of this[faculty]) {
+//       if (`points` in student);
+//       totalPoints += student.points;
+//     }
+//     return totalPoints;
+//   },
+// };
 
-// console.log(hogvarts.getUserList(`griffindor`));
-// console.log(hogvarts.getUserList(`slizerin`));
-// console.log(hogvarts.getUserList(`slizering`));
+// // console.log(hogvarts.getUserList(`griffindor`));
+// // console.log(hogvarts.getUserList(`slizerin`));
+// // console.log(hogvarts.getUserList(`slizering`));
 
-console.log(hogvarts.getTotalPoints(`griffindor`));
-console.log(hogvarts.getTotalPoints(`slizerin`));
-console.log(hogvarts.getTotalPoints(`slizering`));
+// console.log(hogvarts.getTotalPoints(`griffindor`));
+// console.log(hogvarts.getTotalPoints(`slizerin`));
+// console.log(hogvarts.getTotalPoints(`slizering`));

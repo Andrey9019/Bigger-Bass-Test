@@ -13,15 +13,14 @@
 //   console.log(book[key]);
 // }
 
-
 // Об'єкт
 
 // const user = {
 //     name: `Test user`,
 //     skills: {
-//         html: true,
-//         css: true,
-//         react: false,
+// html: true,
+// css: true,
+// react: false,
 //     }
 // }
 // звернення
@@ -49,10 +48,9 @@
 //  user.city = `Krivoy Rog`;
 //  user[`age`] = 25;
 // console.log(user);
- 
+
 // user.city = `Odessa`
 // console.log(user);
-
 
 // Методи
 
@@ -83,7 +81,7 @@
 
 // for (const key in user) {
 //     console.log(key);
-// console.log(user[key]);    
+// console.log(user[key]);
 // }
 
 // const user = {
@@ -100,3 +98,48 @@
 //     console.log(user[key]);
 // }
 // console.log(keys);
+
+//Деструктуризація масивів
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// const [first, , second, , third] = arr;
+// console.log(first);
+// console.log(second);
+// console.log(third);
+
+//Деструктуризація об'єктів
+
+// const user = {
+//   name: `test name`,
+//   skills: {
+//     html: true,
+//     css: true,
+//     react: false,
+//   },
+// };
+
+// console.log(`html`, user.skills.html);
+
+// const {
+//   skills,
+//   skills: { html },
+// } = user;
+
+// console.log(`skills`, skills);
+
+// const user = {
+//   name: `Andrey`,
+//   skills: {
+//     html: true,
+//     css: true,
+//     react: false,
+//   },
+// };
+
+// function getUserName({ name, skills: { html, css, react } } = {}) {
+//   console.log(
+//     `Hello my name is ${name}, I know html - ${html}, css - ${css}, react - ${react}`
+//   );
+// }
+// getUserName(user);
