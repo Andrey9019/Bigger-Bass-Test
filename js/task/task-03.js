@@ -154,3 +154,78 @@
 // console.log(hogvarts.getTotalPoints(`griffindor`));
 // console.log(hogvarts.getTotalPoints(`slizerin`));
 // console.log(hogvarts.getTotalPoints(`slizering`));
+
+// Task-5
+
+// function calcBMI({ weight, height }) {
+//   const numericWeight = Number(weight.replace(`,`, `.`));
+//   const numericHeight = Number(height.replace(`,`, `.`));
+//   return Number((numericWeight / numericHeight ** 2).toFixed(1));
+// }
+
+// console.log(
+//   calcBMI({
+//     weight: `88.73`,
+//     height: `1.75`,
+//   })
+// );
+
+// Task-6
+
+// function transformUsername({ firstName, lastName, ...props }) {
+//   return { fullNAme: `${firstName} ${lastName}`, ...props };
+// }
+
+// console.log(
+//   transformUsername({
+//     id: 1,
+//     firstName: `Andrey`,
+//     lastName: `Zirchenko`,
+//     email: `a.zirchenko90@gmail.com`,
+//     friendCount: 40,
+//   })
+// );
+
+// console.log(
+//   transformUsername({
+//     id: 2,
+//     firstName: `Svetlana`,
+//     lastName: `Stepanenko`,
+//     email: `s.stepanenko@gmail.com`,
+//     friendCount: 65,
+//   })
+// );
+
+// Task-7
+
+// function getStockReprt({ companyName, stock }) {
+//   const values = Object.values(stock);
+//   console.log(values);
+//   let total = 0;
+
+//   for (const value of values) {
+//     total += value;
+//   }
+//   return `${companyName} has ${total} items in stock`;
+// }
+
+// console.log(
+//   getStockReprt({
+//     companyName: `Cyberdyne Sysetem`,
+//     stock: {
+//       repairBoots: 150,
+//       defenceBots: 50,
+//     },
+//   })
+// );
+
+// console.log(
+//   getStockReprt({
+//     companyName: `Belacci`,
+//     stock: {
+//       hats: 22,
+//       shoes: 5,
+//       skirts: 9,
+//     },
+//   })
+// );

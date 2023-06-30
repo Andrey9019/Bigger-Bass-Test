@@ -143,3 +143,16 @@
 //   );
 // }
 // getUserName(user);
+
+//rest
+// const arr = [1, 2, 3];
+
+// function foo(first, second, third) {
+//   console.log(`first`, first);
+//   console.log(`second`, second);
+//   console.log(`third`, third);
+// }
+// foo(...arr); // (1,2,3)
+
+//
+//
