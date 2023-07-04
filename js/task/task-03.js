@@ -169,11 +169,11 @@
 
 // Task-23
 
-const highTemperatures = {
-  yesterday: 28,
-  today: 26,
-  tomorrow: 33,
-};
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+//  };
 // Change code below this line
 
 // const highYesterday = highTemperatures.yesterday;
@@ -181,10 +181,96 @@ const highTemperatures = {
 // const highTomorrow = highTemperatures.tomorrow;
 // const highIcon = highTemperatures.icon;
 
-const {
-  highIcon:
-    firstCoverImage = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
-} = highTemperatures;
+// const {
+//   highIcon:
+//     firstCoverImage = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
 
 // Change code above this line
 // const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+// Task-30
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+
+//   const makeTask = { completed: false };
+// }
+// makeTask({ text: "Buy bread" });
+// makeTask({});
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" });
+
+// Task-33
+
+// function findMatches(arr, ...args) {
+//   const matches = [];
+//   for (let i = 0; i < args.length; i += 1) {
+//     if (arr.includes(args[i])) {
+//       matches.push(args[i]);
+//     }
+//   }
+//   console.log(matches);
+//   return matches;
+// }
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7);
+
+// Task -34
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   removeBook(bookName) {
+//     console.log(`Deleting book ${bookName}`);
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+
+// bookShelf.removeBook("Red sunset");
+
+// Task-35
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPotion) {
+    for (let potion of this.potions) {
+      if (potion.name === newPotion.name) {
+        return `Error! Potion ${newPotion} is already in your inventory!`;
+      }
+    }
+    this.potions.push(newPotion);
+  },
+  removePotion(potionName) {
+    for (let i = 0; i < this.potions.length; i++) {
+      if (potionName === this.potions[i].name) {
+        return this.potions.splice(i, 1);
+      }
+    }
+    return `Potion ${potionName} is not in inventory!`;
+  },
+
+  updatePotionName(oldName, newName) {
+    for (let potion of this.potions) {
+      if (potion.name === oldName) {
+        return (potion.name = newName);
+      }
+    }
+    return `Potion ${oldName} is not in inventory!`;
+  },
+  // Change code above this line
+};
