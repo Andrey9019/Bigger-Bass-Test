@@ -237,40 +237,40 @@
 
 // Task-35
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(newPotion) {
-    for (let potion of this.potions) {
-      if (potion.name === newPotion.name) {
-        return `Error! Potion ${newPotion} is already in your inventory!`;
-      }
-    }
-    this.potions.push(newPotion);
-  },
-  removePotion(potionName) {
-    for (let i = 0; i < this.potions.length; i++) {
-      if (potionName === this.potions[i].name) {
-        return this.potions.splice(i, 1);
-      }
-    }
-    return `Potion ${potionName} is not in inventory!`;
-  },
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (let potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion} is already in your inventory!`;
+//       }
+//     }
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i++) {
+//       if (potionName === this.potions[i].name) {
+//         return this.potions.splice(i, 1);
+//       }
+//     }
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
 
-  updatePotionName(oldName, newName) {
-    for (let potion of this.potions) {
-      if (potion.name === oldName) {
-        return (potion.name = newName);
-      }
-    }
-    return `Potion ${oldName} is not in inventory!`;
-  },
-  // Change code above this line
-};
+//   updatePotionName(oldName, newName) {
+//     for (let potion of this.potions) {
+//       if (potion.name === oldName) {
+//         return (potion.name = newName);
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+//   // Change code above this line
+// };
