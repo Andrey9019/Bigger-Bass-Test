@@ -59,3 +59,42 @@
 // logItem([`apple`, `limon`, `banana`]);
 
 // Task-2
+
+// const products = [
+//   {
+//     id: 1,
+//     name: `Телефон`,
+//     price: 5000,
+//     description: `Сматрофон з потужним процесором`,
+//   },
+//   {
+//     id: 2,
+//     name: `Ноутбук`,
+//     price: 5000,
+//     description: `Легкий ноутбук`,
+//   },
+//   {
+//     id: 3,
+//     name: `Планшет`,
+//     price: 5000,
+//     description: `Компактний планшет`,
+//   },
+// ];
+// function getProductDetails(id, success, error) {
+//   for (const product of products) {
+//     if (product.id === id) {
+//       success(product);
+//       return;
+//     }
+//   }
+//   error();
+// }
+
+// getProductDetails(2, handleSuccess, handError);
+
+// function handleSuccess(message) {
+//   console.log(`Success!`, message);
+// }
+// function handError() {
+//   console.log(`Error! Product not found`);
+// }
