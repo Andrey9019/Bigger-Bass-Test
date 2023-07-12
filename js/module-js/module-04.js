@@ -125,8 +125,8 @@ const users = [
 // const callback = ({ name }) => name;
 // console.log(customMap(users));
 
-// flatMap
-// const result = users.flatMap(({skills}) => skills)
+// flatMap;
+// const result = users.flatMap(({ skills }) => skills);
 // console.log(result);
 
 // flat
