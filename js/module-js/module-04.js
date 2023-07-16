@@ -272,47 +272,61 @@
 // console.log(getBook(books, 'qwerty'));
 
 // Task-4
-// Напишіть функцію, яка використовує метод reduce, щоб обчислити загальну вартість всіх товарів у масиві, яка розраховується як добуток ціни товару на його кількість, а потім сумується з іншими товарами. Результат повинен бути загальною вартістю всіх товарів.
+// Напишіть функцію, яка використовує метод reduce, щоб обчислити
+//загальну вартість всіх товарів у масиві, яка розраховується як
+//добуток ціни товару на його кількість, а потім сумується з іншими
+//товарами.Результат повинен бути загальною вартістю всіх товарів.
 
 // const products = [
-//     { id: 1, name: 'T-shirt', price: 20, quantity: 3 },
-//     { id: 2, name: 'Jeans', price: 50, quantity: 2 },
-//     { id: 3, name: 'Sneakers', price: 80, quantity: 1 },
-//     { id: 4, name: 'Hat', price: 15, quantity: 4 },
-//     { id: 5, name: 'Socks', price: 5, quantity: 6 }
+//   { id: 1, name: "T-shirt", price: 20, quantity: 3 },
+//   { id: 2, name: "Jeans", price: 50, quantity: 2 },
+//   { id: 3, name: "Sneakers", price: 80, quantity: 1 },
+//   { id: 4, name: "Hat", price: 15, quantity: 4 },
+//   { id: 5, name: "Socks", price: 5, quantity: 6 },
 // ];
 
 // function getTotal(arr) {
-//     const total = arr.reduce((acc, product) => {
-//         acc += product.price * product.quantity;
-//         return acc;
-//     }, 0)
-
-//     return total;
-
-//     // return arr.reduce((acc, { price, quantity }) => acc += price * quantity, 0)
+//   return arr.reduce((acc, { price, quantity }) => (acc += price * quantity), 0);
 // }
-// console.log(getTotal(products));
 
+// getTotal(products);
+// console.log(getTotal(products));
 // Task-5
-// Напишіть функцію, яка використовує метод sort, щоб відсортувати книжки
-//за роком видання у спадаючому порядку.Результат повинен бути відсортованим масивом книжок за роком видання.
+// Напишіть функцію, яка використовує метод sort, щоб відсортувати
+//книжки
+//за роком видання у спадаючому порядку.Результат повинен бути
+//відсортованим масивом книжок за роком видання.
 
 // const books = [
-//     { title: 'JavaScript: The Good Parts', author: 'Douglas Crockford', year: 2008 },
-//     { title: 'Clean Code: A Handbook of Agile Software Craftsmanship', author: 'Robert C. Martin', year: 2008 },
-//     { title: 'The Pragmatic Programmer: Your Journey to Mastery', author: 'Andrew Hunt, David Thomas', year: 1999 },
-//     { title: 'Design Patterns: Elements of Reusable Object-Oriented Software', author: 'Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides', year: 1994 },
-//     { title: 'Refactoring: Improving the Design of Existing Code', author: 'Martin Fowler', year: 1999 }
+//   {
+//     title: "JavaScript: The Good Parts",
+//     author: "Douglas Crockford",
+//     year: 2008,
+//   },
+//   {
+//     title: "Clean Code: A Handbook of Agile Software Craftsmanship",
+//     author: "Robert C. Martin",
+//     year: 2008,
+//   },
+//   {
+//     title: "The Pragmatic Programmer: Your Journey to Mastery",
+//     author: "Andrew Hunt, David Thomas",
+//     year: 1999,
+//   },
+//   {
+//     title: "Design Patterns: Elements of Reusable Object-Oriented Software",
+//     author: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+//     year: 1994,
+//   },
+//   {
+//     title: "Refactoring: Improving the Design of Existing Code",
+//     author: "Martin Fowler",
+//     year: 1999,
+//   },
 // ];
 
 // function sortDesc(arr) {
-//     // const result = [...arr].sort((a, b) => b.year - a.year);
-//     // return result;
-
-//     return [...arr].sort((a, b) => b.year - a.year)
-//     // .map(({ author, year }) => ({ author, year }));
-
+//   return [...arr].sort((a, b) => b.year - a.year);
 // }
 // console.log(sortDesc(books));
 
@@ -321,26 +335,24 @@
 //та filter, щоб отримати масив назв продуктів, ціна яких менше 2 доларів
 //та відсортуй їх за алфавітним порядком.
 // const products = [
-//     { id: 2, name: 'Banana', price: 0.99 },
-//     { id: 1, name: 'Apple', price: 1.99 },
-//     { id: 3, name: 'Orange', price: 2.49 },
-//     { id: 4, name: 'Grapes', price: 3.99 }
+//   { id: 2, name: "Banana", price: 0.99 },
+//   { id: 1, name: "Apple", price: 1.99 },
+//   { id: 3, name: "Orange", price: 2.49 },
+//   { id: 4, name: "Grapes", price: 3.99 },
 // ];
 
 // function getProducts(arr) {
-//     // const min = arr.filter((product) => product.price < 2);
-//     // const names = min.map((product) => product.name);
-//     // names.sort((a, b) => a.localeCompare(b));
+//   //   return arr
+//   //     .filter((product) => product.price < 2)
+//   //     .map((product) => product.name)
+//   //     .sort((a, b) => a.localeCompare(b));
 
-//     // return names
-
-//     return arr.filter(({ price }) => price < 2)
+//   return arr
+//     .filter(({ price }) => price < 2)
 //     .map(({ name }) => name)
-//     .sort((a,b) => a.localeCompare(b));
+//     .sort((a, b) => a.localeCompare(b));
 // }
 // console.log(getProducts(products));
-// console.log(products);
-
 // Task-7 HARD 😈
 
 // Є рядок в якому довільна кількість літер, гарантовано в рядку
@@ -355,30 +367,14 @@
 //     s: 3,
 //     // ...
 // }
-// const obj = str.split('')
-//     .reduce((acc, item) => {
-//         if (acc.hasOwnProperty(item)) { // item in acc
-//             acc[item] += 1;
-//         } else {
-//             acc[item] = 1
-//         }
 
-//         return acc
-//     }, {})
+// const obj = str.split(``).reduce((acc, item) => {
+//   if (acc.hasOwnProperty(item)) {
+//     acc[item] += 1;
+//   } else {
+//     acc[item] = 1;
+//   }
+//   return acc;
+// }, {});
 
 // console.log(obj);
-
-// Артем вітаю. Допоможіть розібрати.
-// const calculateTotalPrice = (orderedItems) => {
-//     let result = 0;
-//     orderedItems.forEach(number => {
-//      result += number;
-//     })
-//     return result;
-//   }
-//    Що зробив помилково?
-
-// const numbers = [44, 1, 2, 3, 11, 22];
-// // numbers.sort()
-// numbers.sort((a, b) => a - b);
-// console.log(numbers);
