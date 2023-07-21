@@ -562,21 +562,23 @@
 //
 
 // Task-4
-// Необхідно створити клас Hero, який представляє героя з гри. Клас повинен мати публічні властивості name, level та health, а також методи attack та heal, що дозволяють герою атакувати та відновлювати здоров'я відповідно.
+// Необхідно створити клас Hero, який представляє героя з гри. Клас повинен
+//мати публічні властивості name, level та health, а також методи attack та
+//heal, що дозволяють герою атакувати та відновлювати здоров'я відповідно.
 // Також створи функціонал для підрахунку створених героїв
 
 // Властивість name має зберігати ім'я героя.
 // Властивість level має зберігати рівень героя.
 // Властивість health має зберігати поточний рівень здоров'я героя.
-// Метод attack наносить пошкодження в розмір 10 одиниць. Метод heal додає до здоров'я героя 10 одиниць.
+// Метод attack наносить пошкодження в розмір 10 одиниць. Метод heal додає
+// до здоров'я героя 10 одиниць.
 
 // class Hero {
 //   static counter = 0;
 //   static addHero() {
 //     this.counter += 1;
-//     console.log("Кількість героїв ", this.counter);
+//     console.log(`Кількість героїв: `, this.counter);
 //   }
-
 //   #level;
 //   constructor(name) {
 //     this.name = name;
@@ -584,23 +586,13 @@
 //     this.health = 200;
 //     Hero.addHero();
 //   }
-
 //   attack() {
 //     console.log(`Attack with 10 damage`);
 //   }
-
 //   heal() {
 //     this.health += 10;
 //   }
 // }
 
-// const bloodseker = new Hero("Bloodseker");
-// const bloodseker2 = new Hero("Bloodseker");
-// const bloodseker3 = new Hero("Bloodseker");
-// const bloodseker4 = new Hero("Bloodseker");
-// const bloodseker5 = new Hero("Bloodseker");
-// const bloodseker6 = new Hero("Bloodseker");
-
-// console.log(bloodseker.heal());
+// const bloodseker = new Hero(`Bloodseker`);
 // console.log(bloodseker);
-// console.log(Hero.counter);
