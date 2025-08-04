@@ -1,0 +1,219 @@
+/* ==== GLOBAL ==== */
+body {
+    font-family: 'Sigmar', sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/assets/other/main-bg.webp') center/cover no-repeat;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+}
+
+.corner-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.corner-img {
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+
+}
+
+.corner-img.left {
+    top: -2vw;
+    width: 45vw;
+    z-index: 2;
+}
+
+.corner-img.right {
+    left: 22vw;
+    width: 90vw;
+    top: -5vw;
+    z-index: 1;
+}
+
+
+
+
+/* ==== LOADER ==== */
+
+
+/* ==== POPUPS ==== */
+/* .popup-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    rotate: ;
+    background: url('/public/assets/table/popup-bg.png') center/cover no-repeat;
+    z-index: 1000;
+} */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170vw;
+    text-align: center;
+    color: #fff;
+    z-index: 1000;
+}
+
+.popup::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: 20vw 10vw;
+
+    background: url('/public/assets/table/popup-bg.png') center/cover no-repeat;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+
+.popup-logo {
+    width: 45vw;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    position: fixed;
+    inset: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+/* 
+.popup h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.popup p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.popup h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.timer {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ffcc00;
+    font-weight: bold;
+} */
+
+.popup-button {}
+
+/* ==== SLOTS ==== */
+
+.slotArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('/public/assets/slots/slotsbg.png') center/cover no-repeat;
+    background-size: 125% 100%;
+    position: relative;
+    z-index: 10;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+    padding: 60px 0;
+
+    overflow: hidden;
+}
+
+
+.slot img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.slot-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.slot-image {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 5px;
+}
+
+.free-spins-container {
+    padding: 10px 20px;
+    margin-top: -55px;
+    background: url('/public/assets/table/table-free-spins.png') center/cover no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.text-free-spins {
+    font-size: 36px;
+    background: linear-gradient(180deg, hsl(358, 100%, 80%), #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.button-spin {
+    font-family: 'Sigmar', sans-serif;
+    padding: 0 60px 0 60px;
+    color: #FFF;
+    font-size: 64px;
+    background: url('/public/assets/table/button-spin.png') center/cover no-repeat;
+    border: none;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
