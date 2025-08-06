@@ -1,6 +1,7 @@
 @import url('./popup.css');
 
 /* ==== GLOBAL ==== */
+
 body {
     font-family: 'Sigmar', sans-serif;
     display: flex;
@@ -12,6 +13,7 @@ body {
     height: 100vh;
     overflow: hidden;
 
+
 }
 
 h1,
@@ -22,6 +24,11 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
 }
 
 
@@ -196,4 +203,22 @@ p {
     100% {
         transform: translateY(0) scale(1);
     }
+}
+
+/* Ефект блимання */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Клас, що викликає анімацію блимання */
+.blink {
+    animation: blink 0.8s ease-in-out infinite;
 }

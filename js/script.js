@@ -155,6 +155,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }, duration);
     });
   }
+  /**
+   * Застосовує клас .blink до другого ряду слотів (index 1)
+   */
+  function blinkWinningRow() {
+    const rows = document.querySelectorAll(".slot-row");
+    if (rows.length > 1) {
+      rows[1].classList.add("blink");
+    }
+  }
 
   // Обробник кнопки SPIN
   spinButton.addEventListener("click", async () => {
@@ -171,11 +180,21 @@ document.addEventListener("DOMContentLoaded", () => {
     if (remainingSpins > 0) {
       spinButton.disabled = false;
     } else {
+      // Останній спін — запускаємо блимання другого ряду
+      blinkWinningRow();
+
+      // Через 700 мс показуємо фінальний попап і зупиняємо блимання
       setTimeout(() => {
         show(backdrop);
         show(finalPopup);
         startTimer(15 * 60);
-      }, 700);
+
+        // Прибрати блимання, щоб не заважало в попапі
+        const rows = document.querySelectorAll(".slot-row");
+        if (rows.length > 1) {
+          rows[1].classList.remove("blink");
+        }
+      }, 2000);
     }
   });
 

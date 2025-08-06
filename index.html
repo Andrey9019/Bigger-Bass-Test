@@ -20,10 +20,14 @@
     <div id="startPopup" class="popup hidden popup-content">
         <img src="/public/assets/logo/logo.png" class="popup-logo" alt="" />
         <h2 class="popup-title">WOW!</h2>
-        <p class="popup-subtitle">YOU RECEIVED</p>
+        <p class="popup-subtitle">YOU RECEIVED:</p>
         <p class="popup-highlight"><strong>3 FREE SPINS</strong></p>
-        <p class="popup-info">WITHOUT REGISTRATION</p>
-        <button id="activateBtn" class="popup-button">ACTIVATE</button>
+        <div class="popup-info-container">
+            <img src="/public/assets/other/dis.png" class="popup-icon" alt="" />
+
+            <p class="popup-info">WITHOUT<br />REGISTRATION</p>
+
+        </div> <button id="activateBtn" class="popup-button">ACTIVATE</button>
 
     </div>
 
@@ -41,15 +45,23 @@
     </div>
 
     <!-- 4) Фінальний попап -->
-    <div id="finalPopup" class="popup hidden">
+    <div id="finalPopup" class="popup hidden popup-content">
         <img src="/public/assets/logo/logo.png" class="popup-logo" alt="" />
-        <h2>WELL DONE!</h2>
-        <p>YOU WON:</p>
-        <h3>450 GBP<br>+ 250 FREE SPINS</h3>
-        <p>Turn on notifications and receive more special bonuses!</p>
-        <a href="{offer}" id="installBtn" class="popup-button">INSTALL THE APP</a>
+        <h2 class="popup-title">WELL DONE!</h2>
+        <p class="popup-subtitle">YOU WON:</p>
+        <h3 class="popup-highlight">450 GBP<br><span class="popup-subtitle">+ 250 FREE SPINS</span></h3>
+        <div class="popup-info-container">
+            <img src="/public/assets/other/done.png" class="popup-icon" alt="" />
+
+            <p class="popup-info">Turn on notifications and receive more special bonuses!</p>
+
+        </div> <a href="{offer}" id="installBtn" class="popup-button">INSTALL THE APP</a>
         <div class="timer">
-            Bonus will expire in: <span id="minutes">15</span>:<span id="seconds">00</span>
+            Bonus will expire in:
+            <div class="time">
+                <span id="minutes">15</span>:<span id="seconds">00</span>
+
+            </div>
         </div>
     </div>
 
