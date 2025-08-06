@@ -17,7 +17,7 @@
     /* щоб фон повністю вміщався */
     /* aspect-ratio: 2 / 4; */
     /* регулює ширину/висоту */
-    background: url('/public/assets/table/popup-bg.png') no-repeat center center;
+    background: url('../public/assets/table/popup-bg.png') no-repeat center center;
     background-size: contain;
 
     display: flex;
@@ -90,7 +90,7 @@
     padding: 30px 60px 30px 60px;
     color: #FFF;
     font-size: 32px;
-    background: url('/public/assets/table/button-spin.png') center/cover no-repeat;
+    background: url('../public/assets/table/button-spin.png') center/cover no-repeat;
     border: none;
     animation: pulse 1s ease-in-out infinite;
 }
