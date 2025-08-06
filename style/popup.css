@@ -101,7 +101,10 @@
 }
 
 .final-button {
-    font-size: 18px;
+    /* font-size: 18px; */
+    /* padding: 50px 40px 50px 40px; */
+    /* margin: 0px 10px; */
+
 }
 
 /* @media (min-width: 600px) {
@@ -128,7 +131,7 @@
 } */
 
 .timer {
-    padding: 0.7rem;
+    padding: 1rem;
     font-size: 0.5rem;
     color: #fff;
     text-align: center;
