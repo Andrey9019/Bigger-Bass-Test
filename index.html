@@ -4,57 +4,56 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/public/assets/logo/logo.png" />
+    <link rel="icon" href="/public/assets/logo/logo.png" />
     <title>Bigger Bass Test</title>
     <link rel="stylesheet" href="/style/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- Popup Start -->
-    <!-- <div id="startPopup" class="popup hidden">
-        <h2>WOW! YOU RECEIVED</h2>
-        <p><strong>3 FREE SPINS</strong></p>
-        <p>WITHOUT REGISTRATION</p>
-        <button id="activateBtn">ACTIVATE</button>
-    </div> -->
+    <!-- 1) Лоадер і фон -->
+    <div id="loaderBg" class="loader-bg hidden"></div>
+    <div id="backdrop" class="popup-overlay hidden"></div>
 
-    <!-- Game Section -->
+    <!-- 2) Стартовий попап -->
+    <div id="startPopup" class="popup hidden popup-content">
+        <img src="/public/assets/logo/logo.png" class="popup-logo" alt="" />
+        <h2 class="popup-title">WOW!</h2>
+        <p class="popup-subtitle">YOU RECEIVED</p>
+        <p class="popup-highlight"><strong>3 FREE SPINS</strong></p>
+        <p class="popup-info">WITHOUT REGISTRATION</p>
+        <button id="activateBtn" class="popup-button">ACTIVATE</button>
+
+    </div>
+
+    <!-- 3) Основний екран гри -->
     <div id="gameContainer" class="game">
-
         <div class="corner-wrapper">
             <img src="/public/assets/logo/logo.png" class="corner-img left" alt="" />
             <img src="/public/assets/other/fisher-sm.png" class="corner-img right" alt="" />
         </div>
-
-        <div class="slotArea" id="slotContainer"></div>
-        <div class="free-spins-container">
-            <div class="text-free-spins attempts" id="freeSpinsCounter">FREE SPINS : <span id="attempts-count"></span>
-            </div>
+        <div id="slotContainer" class="slotArea"></div>
+        <div id="fsContainer" class="free-spins-container hidden">
+            <div class="text-free-spins">FREE SPINS: <span id="attempts-count"></span></div>
         </div>
-        <button class="button-spin" id="spinButton">SPIN</button>
+        <button id="spinButton" class="button-spin hidden">SPIN</button>
     </div>
 
-    <!-- Final Popup -->
+    <!-- 4) Фінальний попап -->
     <div id="finalPopup" class="popup hidden">
-
         <img src="/public/assets/logo/logo.png" class="popup-logo" alt="" />
-
         <h2>WELL DONE!</h2>
         <p>YOU WON:</p>
         <h3>450 GBP<br>+ 250 FREE SPINS</h3>
         <p>Turn on notifications and receive more special bonuses!</p>
-        <a href="{offer}" class="popup-button">INSTALL THE APP</a>
+        <a href="{offer}" id="installBtn" class="popup-button">INSTALL THE APP</a>
         <div class="timer">
             Bonus will expire in: <span id="minutes">15</span>:<span id="seconds">00</span>
-
         </div>
     </div>
 
-
-
-    <script src="/js/scripte.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

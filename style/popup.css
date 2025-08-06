@@ -1,0 +1,141 @@
+/* 1) Затемнювач фонового контенту */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+/* 2) Основний контейнер popup-а */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    /* max-width: 360px; */
+    /* щоб фон повністю вміщався */
+    aspect-ratio: 2 / 4;
+    /* регулює ширину/висоту */
+    background: url('/public/assets/table/popup-bg.png') no-repeat center center;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* 3) Логотип зверху */
+.popup-logo {
+    width: 60vw;
+    margin-top: -3rem;
+    z-index: 1;
+}
+
+/* 4) Обгортка тексту */
+.popup-content {
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.popup-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+
+}
+
+.popup-subtitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Акцентний текст із градієнтом */
+.popup-highlight {
+    font-family: 'Titan One', cursive;
+    font-size: 2.25rem;
+    margin: 0.5rem 0;
+    background: linear-gradient(180deg, #dcefff 40%, #c079e9 49%, #f0cdff 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #300a78;
+    text-transform: uppercase;
+}
+
+/* Допоміжний опис */
+.popup-info {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 0.25rem 0 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Кнопка ACTIVATE */
+.popup-button {
+    font-family: 'Sigmar', sans-serif;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 70%;
+    max-width: 240px;
+    padding: 0.75rem 1rem;
+    margin: 0 auto;
+    background: url('/public/assets/table/button-spin.png') no-repeat center/cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.popup-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* 5) Кнопка ACTIVATE */
+.popup-button {
+    font-family: 'Sigmar', sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+    width: 70%;
+    max-width: 220px;
+    padding: 0.75rem 0;
+    background: url('/public/assets/table/button-spin.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* @media (min-width: 600px) {
+    .popup-title {
+        font-size: 3.5rem;
+    }
+
+    .popup-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .popup-highlight {
+        font-size: 2.75rem;
+    }
+
+    .popup-info {
+        font-size: 1.1rem;
+    }
+
+    .popup-button {
+        font-size: 1.5rem;
+        max-width: 280px;
+    }
+} */
