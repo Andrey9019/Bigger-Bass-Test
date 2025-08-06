@@ -47,38 +47,36 @@
 
 
 .popup-title {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     margin-top: -4rem;
 
 }
 
 .popup-subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #fff;
 }
 
 /* Акцентний текст із градієнтом */
 .popup-highlight {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: yellow;
-    /* line-height: 1; */
 }
 
 /* Допоміжний опис */
 .popup-info-container {
     display: flex;
-
     align-items: center;
 }
 
 .popup-icon {
-    width: 7rem;
+    width: 4rem;
 }
 
 .popup-info {
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0;
     text-align: start;
 }
@@ -89,10 +87,21 @@
     font-family: 'Sigmar', sans-serif;
     padding: 30px 60px 30px 60px;
     color: #FFF;
-    font-size: 32px;
+    font-size: 28px;
     background: url('../public/assets/table/button-spin.png') center/cover no-repeat;
     border: none;
     animation: pulse 1s ease-in-out infinite;
+}
+
+.button-spin:disabled {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.final-button {
+    font-size: 18px;
 }
 
 /* @media (min-width: 600px) {
@@ -119,15 +128,16 @@
 } */
 
 .timer {
-    font-size: 1rem;
+    padding: 0.7rem;
+    font-size: 0.5rem;
     color: #fff;
     text-align: center;
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
+    background: url('../public/assets/table/timer-bg.png') center/cover no-repeat;
 }
 
 .time {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
 }

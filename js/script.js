@@ -171,33 +171,40 @@ document.addEventListener("DOMContentLoaded", () => {
   // Обробник кнопки SPIN
   spinButton.addEventListener("click", async () => {
     if (remainingSpins === 0) return;
-    spinButton.disabled = true;
 
+    // 1) Блокуємо кнопку перед анімацією
+    spinButton.disabled = true;
+    spinButton.classList.add("disabled");
+
+    // 2) Виконуємо спін
     const combo = spinsData[currentStep];
     await spinAnimation(combo, 1000, 60);
 
+    // 3) Оновлюємо лічильник
     remainingSpins--;
     attemptsCount.textContent = remainingSpins;
     currentStep++;
 
+    // 4) Після анімації — або ре-активуємо кнопку, або показуємо фінал
     if (remainingSpins > 0) {
+      // прибираємо блокування
       spinButton.disabled = false;
+      spinButton.classList.remove("disabled");
     } else {
-      // Останній спін — запускаємо блимання другого ряду
+      // останній спін — показуємо блимання, потім фінальний попап
       blinkWinningRow();
 
-      // Через 700 мс показуємо фінальний попап і зупиняємо блимання
       setTimeout(() => {
         show(backdrop);
         show(finalPopup);
         startTimer(15 * 60);
 
-        // Прибрати блимання, щоб не заважало в попапі
+        // прибираємо блимання, щоб воно не заважало в попапі
         const rows = document.querySelectorAll(".slot-row");
-        if (rows.length > 1) {
-          rows[1].classList.remove("blink");
-        }
+        if (rows[1]) rows[1].classList.remove("blink");
       }, 2000);
+
+      // button лишається в стані disabled + .disabled
     }
   });
 

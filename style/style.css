@@ -78,7 +78,7 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('../public/assets/other/load-bg.png') center/cover no-repeat;
+    background: url('../assets/other/load-bg.png') center/cover no-repeat;
     z-index: 10000;
 }
 
