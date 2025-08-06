@@ -61,7 +61,7 @@
 
 /* Акцентний текст із градієнтом */
 .popup-highlight {
-    font-size: 4rem;
+    font-size: 3rem;
     color: yellow;
     /* line-height: 1; */
 }
