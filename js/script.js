@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Всі можливі символи
   const allSymbols = Array.from(
     { length: 16 },
-    (_, i) => `../public/assets/slots/symbol${i + 1}.png`
+    (_, i) => `public/assets/slots/symbol${i + 1}.png`
   );
 
   // Передзадані комбінації для кожного спіну
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "symbol5",
       "symbol12",
     ],
-  ].map((arr) => arr.map((fn) => `../public/assets/slots/${fn}.png`));
+  ].map((arr) => arr.map((fn) => `public/assets/slots/${fn}.png`));
 
   // Стан гри
   const totalSpins = spinsData.length - 1; // три активні спіни
