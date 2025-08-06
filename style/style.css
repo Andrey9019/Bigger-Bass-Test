@@ -36,7 +36,6 @@ a {
     display: none;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
 
 }
 
@@ -78,8 +77,8 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('../assets/other/load-bg.png') center/cover no-repeat;
-    z-index: 10000;
+    background: url('../public/assets/other/load-bg.png') center/cover no-repeat;
+    z-index: 10001;
 }
 
 
