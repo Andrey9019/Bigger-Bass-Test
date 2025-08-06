@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Всі можливі символи
   const allSymbols = Array.from(
     { length: 16 },
-    (_, i) => `../public/assets/slots/symbol${i + 1}.png`
+    (_, i) => `/Bigger-Bass-Test/public/assets/slots/symbol${i + 1}.png`
   );
+  console.log(allSymbols);
 
   // Передзадані комбінації для кожного спіну
   const spinsData = [
@@ -65,7 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "symbol5",
       "symbol12",
     ],
-  ].map((arr) => arr.map((fn) => `../public/assets/slots/${fn}.png`));
+  ].map((arr) =>
+    arr.map((fn) => `/Bigger-Bass-Test/public/assets/slots/${fn}.png`)
+  );
 
   // Стан гри
   const totalSpins = spinsData.length - 1; // три активні спіни
