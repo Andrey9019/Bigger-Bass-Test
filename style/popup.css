@@ -1,4 +1,3 @@
-/* 1) Затемнювач фонового контенту */
 .popup-overlay {
     position: fixed;
     inset: 0;
@@ -6,45 +5,35 @@
     z-index: 1000;
 }
 
-/* 2) Основний контейнер popup-а */
 .popup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
-    /* max-width: 360px; */
-    /* щоб фон повністю вміщався */
-    /* aspect-ratio: 2 / 4; */
-    /* регулює ширину/висоту */
     background: url('../public/assets/table/popup-bg.png') no-repeat center center;
     background-size: contain;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     padding: 1rem;
     box-sizing: border-box;
     z-index: 1000;
 }
 
-/* 3) Логотип зверху */
 .popup-logo {
     width: 60vw;
     margin-top: -3rem;
     z-index: 1;
 }
 
-/* 4) Обгортка тексту */
 .popup-content {
     text-align: center;
     color: #fff;
     line-height: 1;
 
 }
-
 
 .popup-title {
     font-size: 4rem;
@@ -59,13 +48,11 @@
     color: #fff;
 }
 
-/* Акцентний текст із градієнтом */
 .popup-highlight {
     font-size: 2.5rem;
     color: yellow;
 }
 
-/* Допоміжний опис */
 .popup-info-container {
     display: flex;
     align-items: center;
@@ -81,8 +68,6 @@
     text-align: start;
 }
 
-
-/* 5) Кнопка ACTIVATE */
 .popup-button {
     font-family: 'Sigmar', sans-serif;
     padding: 30px 60px 30px 60px;
@@ -100,47 +85,25 @@
     pointer-events: none;
 }
 
-.final-button {
-    /* font-size: 18px; */
-    /* padding: 50px 40px 50px 40px; */
-    /* margin: 0px 10px; */
-
-}
-
-/* @media (min-width: 600px) {
-    .popup-title {
-        font-size: 3.5rem;
-    }
-
-    .popup-subtitle {
-        font-size: 1.5rem;
-    }
-
-    .popup-highlight {
-        font-size: 2.75rem;
-    }
-
-    .popup-info {
-        font-size: 1.1rem;
-    }
-
-    .popup-button {
-        font-size: 1.5rem;
-        max-width: 280px;
-    }
-} */
-
 .timer {
-    padding: 1rem;
-    font-size: 0.5rem;
-    color: #fff;
-    text-align: center;
+    width: 100px;
+    height: 80px;
+    padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
-    background: url('../public/assets/table/timer-bg.png') center/cover no-repeat;
+    align-items: center;
+    justify-content: center;
+    background: url('../public/assets/table/timer-bg.png') center/contain no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
 }
 
 .time {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
     font-weight: bold;
     font-size: 2rem;
+    width: 5ch;
+    text-align: center;
+    line-height: 1;
 }
